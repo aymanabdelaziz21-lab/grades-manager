@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./Assets//Poppins-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 12px;
+    padding: 10px;
+    background-color: #0a599941;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67%;
+    gap: 6px;
+}
+
+input,
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #86868656;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: #0a5999;
+    color: white;
+}
+
+select,
+button {
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.result .data {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 6px;
+}
+
+.result .data .card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    border-left: 10px solid #0a5999;
+    box-shadow: 2px 2px 2px #8686862a;
+    border-radius: 7px;
+}
+
+.result .data .card .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.result .data .card .value {
+    font-size: 15px;
+}
+
+.result .statement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.result .statement .images {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.result .statement .images img {
+    height: 200px;
+    width: 400px;
+    object-fit: fill;
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 100%;
+    right: 100%;
+    background-color: #0a599941;
+    flex-direction: column;
+}
+
+.spinner {
+    height: 100px;
+    width: 100px;
+    border: 10px solid #000;
+    border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 6px;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .result .data {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .result .data .card {
+        width: 90%;
+    }
+
+    .result .statement .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+}
