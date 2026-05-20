@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Manager :)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Wanna Know how much you need in Final Exam for a certain Subject?</h2>
+        <p>Lesten lil bro, just enter your Rk1, Rk2, and the Grade you're looking to get in this subject.</p>
+        <p>You better know what you are saying lil bro.</p>
+    </div>
+    <form action="">
+        <input type="number" id="rk1" placeholder="RK1">
+        <input type="number" id="rk2" placeholder="RK2">
+        <select id="grade">
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+        </select>
+        <button type="button" onclick="ValidationAndExecuting()">Upload</button>
+    </form>
+    <div class="result">
+        <div class="data">
+            
+        </div>
+        <div class="statement">
+            <p class="statement-text"></p>
+            <div class="images">
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
