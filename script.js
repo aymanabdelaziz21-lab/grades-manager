@@ -55,7 +55,7 @@ const ValidationAndExecuting = () => {
         `
         document.querySelector("footer").innerHTML = "This whole thing is just meant to be helpful for students in my university to improve their academic performance, some words spoken in this platform might be offensive to some people but I never meant to hurt anyone's feelings, I'm just trying to be funny, I hope I'm."
     } else {
-        document.querySelector(".statement-text").innerHTML = `You need to get at least ${(option.gradeNumber - rk) / 0.4} in Final Exam in order to get a grade of ${selected}, otherwise you're cooked lil bro `
+        document.querySelector(".statement-text").innerHTML = `You need to get at least ${math.round((option.gradeNumber - rk) / 0.4)} in Final Exam in order to get a grade of ${selected}, otherwise you're cooked lil bro `
         document.querySelector(".images").innerHTML = `
         <img src="./Assets/memes/hmm1.jpeg" alt="">
         <img src="./Assets/memes/hmm2.jpeg" alt="">
